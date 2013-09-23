@@ -41,6 +41,7 @@ define keepalived::vrrp::instance (
   $track_script          = undef,
   $lvs_interface         = undef,
   $virtual_ipaddress_int = undef,
+  $virtual_routes        = undef,
 ) {
   concat::fragment { "keepalived.conf_vrrp_instance_${name}":
     ensure  => $ensure,

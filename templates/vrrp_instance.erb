@@ -34,5 +34,10 @@ vrrp_instance <%= @name %> {
     <%- end -%>
   }
   <%- end -%>
-}
+  <%- if @virtual_routes -%>
 
+  virtual_routes {
+    <% @virtual_routes.each do |r| %><%= r %><% end -%>
+  }
+  <%- end -%>
+}
