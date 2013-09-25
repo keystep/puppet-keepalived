@@ -39,6 +39,7 @@ define keepalived::vrrp::instance (
   $auth_type             = undef,
   $auth_pass             = undef,
   $track_script          = undef,
+  $track_interface       = undef,
   $lvs_interface         = undef,
   $virtual_ipaddress_int = undef,
   $virtual_routes        = undef,

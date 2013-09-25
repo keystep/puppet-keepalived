@@ -21,6 +21,12 @@ vrrp_instance <%= @name %> {
   }
   <%- else -%>
   <%- end -%>
+  <%- if @track_interface -%>
+
+  track_interface {
+    <% @track_interface.each do |tif| %><%= tif %><%- end %>
+  }
+  <%- end -%>
   <%- if @virtual_ipaddress_int -%>
 
   virtual_ipaddress {
