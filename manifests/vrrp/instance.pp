@@ -13,6 +13,9 @@
 #
 # $virtual_ipaddress::     Set floating IP address.
 #
+# $virtual_routes::        Set virtual routes.
+#                          Default: undef.
+#
 # $virtual_router_id::     Set virtual router id.
 #
 # $ensure::                Default: present.
@@ -24,6 +27,9 @@
 #                          Default: undef.
 #
 # $track_script::          Define which script to run to track service states.
+#                          Default: undef.
+#
+# $track_interface::       Define which interface to track.
 #                          Default: undef.
 #
 # $lvs_interface::         Define lvs_sync_daemon_interface.
